@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Цыганков](https://up.htmlacademy.ru/htmlcss/29/user/1535177).
-* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
