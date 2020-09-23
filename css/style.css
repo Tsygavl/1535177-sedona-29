@@ -1,0 +1,133 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-black: #000000;
+  --basic-gray: #EEEEEE;
+  --basic-gray-light: #888888;
+  --basic-gray-dark: #766357;
+  --basic-white-smoke: #F2F2F2;
+  --basik-dim-gray: #666666;
+  --basic-black-gray: #333333;
+}
+/* body*/
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-gray-light);
+}
+.page a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: var(--basic-black);
+}
+/*cause*/
+.cause {
+  background-color: var(--basic-white);
+}
+.title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-black);
+}
+.subtitle {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-black-gray);
+}
+.cause-list,
+.benefits-list{
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cause-item-1-2 {
+  color: var(--basic-white);
+  background-color: var(--basic-blue)
+}
+.cause-item-1-2 h3{
+  font-size: 21px;
+  line-height: 21px;
+}
+.cause-item-1-2 span
+.cause-item-1-2 p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.benefits h4,
+.cause-item h3{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black-gray);
+}
+.benefitsc p,
+.cause-item span,
+cause-item p{
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black-gray);
+}
+.cause-item{
+  background-color: var(--basic-gray);
+}
+/* search */
+.search h2{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+.search p{
+  /* С размерами не точно. Не понял по фигме */
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+/* button */
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(----basic-gray-dark);
+  border: none;
+  /* Как правильно задать цвет и размеры шрифта, могу ли я это сделать здесь?
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  */
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--basic-gray-dark);
+}
