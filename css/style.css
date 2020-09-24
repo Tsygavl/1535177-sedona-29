@@ -20,7 +20,7 @@ body {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-gray-light);
+  background-color: var(--basic-white-smoke);
 }
 .page a {
   text-decoration: none;
@@ -61,8 +61,7 @@ img {
   text-align: center;
   color: var(--basic-black-gray);
 }
-.cause-list,
-.benefits-list{
+.cause-list{
   list-style: none;
   text-align: center;
   text-transform: uppercase;
@@ -80,16 +79,15 @@ img {
   font-size: 14px;
   line-height: 21px;
 }
-.benefits h4,
-.cause-item h3{
+.cause-item h3,
+.cause-item-benefits h4{
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  color: var(--basic-black-gray);
+  color: var(--basic-black);
 }
-.benefitsc p,
 .cause-item span,
-cause-item p{
+.cause-item p{
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black-gray);
@@ -98,6 +96,9 @@ cause-item p{
   background-color: var(--basic-gray);
 }
 /* search */
+.search{
+  background-color: var(--basic-white)
+}
 .search h2{
   font-weight: 700;
   font-size: 30px;
@@ -130,4 +131,37 @@ cause-item p{
 .button:focus,
 .button:active {
   background-color: var(--basic-gray-dark);
+/*page-footer*/
+}
+.page-footer {
+  color: var(--basic-blackblack);
+  background-color: var(--basic-white);
+  background-repeat: repeat;
+  }
+.footer-contacts{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.footer-phone{
+  color: inherit;
+}
+.footer-social ul {
+  list-style: none;
+}
+/* social-button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-blue);
+}
+/*footer-copyright*/
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
