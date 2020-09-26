@@ -11,8 +11,6 @@
 }
 /* body*/
 body {
-  min-width: 1200px;
-  margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -29,17 +27,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .main-navigation {
   font-size: 14px;
-  line-height: 26px
+  line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 .site-navigation {
   background-color: var(--basic-white);
-}
-.site-navigation {
-  list-style: none;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -61,54 +61,53 @@ img {
   text-align: center;
   color: var(--basic-black-gray);
 }
-.cause-list{
-  list-style: none;
+.cause-list {
   text-align: center;
   text-transform: uppercase;
 }
-.cause-item-1-2 {
+.cause-item-realtown-brightdevil {
   color: var(--basic-white);
-  background-color: var(--basic-blue)
+  background-color: var(--basic-blue);
 }
-.cause-item-1-2 h3{
+.cause-item-realtown-brightdevil  h3 {
   font-size: 21px;
   line-height: 21px;
 }
-.cause-item-1-2 span
-.cause-item-1-2 p {
+
+.cause-item-realtown-brightdevil span,
+.cause-item-realtown-brightdevil p {
   font-size: 14px;
   line-height: 21px;
 }
 .cause-item h3,
-.cause-item-benefits h4{
+.cause-item-benefits h4 {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
 }
 .cause-item span,
-.cause-item p{
+.cause-item p {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black-gray);
 }
-.cause-item{
+.cause-item {
   background-color: var(--basic-gray);
 }
 /* search */
-.search{
-  background-color: var(--basic-white)
+.search {
+  background-color: var(--basic-white);
 }
-.search h2{
+.search h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
   color: var(--basic-black);
 }
-.search p{
-  /* С размерами не точно. Не понял по фигме */
+.search p {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   color: var(--basic-black);
 }
 /* button */
@@ -120,34 +119,29 @@ img {
   text-transform: uppercase;
   background-color: var(----basic-gray-dark);
   border: none;
-  /* Как правильно задать цвет и размеры шрифта, могу ли я это сделать здесь?
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: var(--basic-white);
-  */
+  color: var(--basic-white);  
 }
 .button:hover,
 .button:focus,
 .button:active {
   background-color: var(--basic-gray-dark);
-/*page-footer*/
 }
+/*page-footer*/
 .page-footer {
   color: var(--basic-blackblack);
   background-color: var(--basic-white);
   background-repeat: repeat;
-  }
-.footer-contacts{
+}
+.footer-contacts {
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 26px; 
 }
-.footer-phone{
+.footer-phone {
   color: inherit;
-}
-.footer-social ul {
-  list-style: none;
 }
 /* social-button */
 
