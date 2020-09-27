@@ -11,7 +11,6 @@
 }
 /* body*/
 body {
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -69,7 +68,7 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
-.cause-item-realtown-brightdevil  h3 {
+.cause-item-realtown-brightdevil h3 {
   font-size: 21px;
   line-height: 21px;
 }
@@ -158,4 +157,67 @@ img {
 .footer-copyright .button:focus {
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+/*Style hotels.html*/
+/*.searching-results*/
+.searching-results {
+  background-color: var(--basic-white);
+}
+.searching-results strong {
+  font-weight: : 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.searching-results h2,
+.searching-results a {
+  font-size: 12px;
+  line-height: 18px ;
+}
+/*Не очень понимаю как тут стилизовать? "По цене, по типу, по рейтингу. Надо отдельный класс заводить на тег <a>,
+или можно обойтись меньшей кровью?)) Когда в фигме навожу на строки "По типу и по рейтинг" мне показывает черного цвета,
+что явно не так*/
+.hotels-list {
+  background-color: var(--basic-white);
+}
+.hotels-list-item-hotelname {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+.hotels-list p {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black-gray);
+}
+.hotels-list-item-details {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(----basic-gray-dark);
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);  
+   background-color: var(--basic-blue);
+}
+.hotels-list-item-reservation {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(----basic-gray-dark);
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);  
+   background-color: var(--basic-gray-dark);
+}
+.hotels-list-item-rating {
+  background-color: var(--basic-white-smoke);
+  color: var(--basik-dim-gray);
 }
