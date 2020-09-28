@@ -158,7 +158,6 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-/*Style hotels.html*/
 /*.searching-results*/
 .searching-results {
   background-color: var(--basic-white);
@@ -169,13 +168,18 @@ img {
   line-height: 26px;
 }
 .searching-results h2,
-.searching-results a {
+.searching-results a{
   font-size: 12px;
   line-height: 18px ;
 }
-/*Не очень понимаю как тут стилизовать? "По цене, по типу, по рейтингу. Надо отдельный класс заводить на тег <a>,
-или можно обойтись меньшей кровью?)) Когда в фигме навожу на строки "По типу и по рейтинг" мне показывает черного цвета,
-что явно не так*/
+.searching-results-cost {
+  color: var(--basic-blue);
+}
+.searching-results-type,
+.searching-results-raiting {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
 .hotels-list {
   background-color: var(--basic-white);
 }
@@ -189,33 +193,21 @@ img {
   line-height: 21px;
   color: var(--basic-black-gray);
 }
-.hotels-list-item-details {
-  font: inherit;
+.hotels-list-item-link {
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(----basic-gray-dark);
   border: none;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  color: var(--basic-white);  
-   background-color: var(--basic-blue);
 }
-.hotels-list-item-reservation {
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(----basic-gray-dark);
-  border: none;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-white);  
-   background-color: var(--basic-gray-dark);
+.reservation {
+  background-color: var(--basic-gray-dark);
+}
+.details {
+  background-color: var(--basic-blue);
 }
 .hotels-list-item-rating {
   background-color: var(--basic-white-smoke);
