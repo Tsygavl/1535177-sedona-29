@@ -37,6 +37,9 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+.main-image {
+  background: url(img/background photo.jpg);
+}
 .site-navigation {
   background-color: var(--basic-white);
 }
@@ -146,10 +149,6 @@ img {
 
 .social-button {
   color: inherit;
-}
-
-.social-button:hover,
-.social-button:focus {
   background-color: var(--basic-blue);
 }
 /*footer-copyright*/
@@ -168,9 +167,9 @@ img {
   line-height: 26px;
 }
 .searching-results h2,
-.searching-results a{
+.searching-results a {
   font-size: 12px;
-  line-height: 18px ;
+  line-height: 18px;
 }
 .searching-results-cost {
   color: var(--basic-blue);
