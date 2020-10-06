@@ -38,7 +38,11 @@ img {
   background-color: var(--basic-white);
 }
 .main-image {
-  background: url(img/background photo.jpg);
+  background: url(../img/background-photo.jpg);
+  width: 1200px;
+  height: 509px;
+  left: 40px;
+  top: 55px;
 }
 .site-navigation {
   background-color: var(--basic-white);
@@ -144,6 +148,14 @@ img {
 }
 .footer-phone {
   color: inherit;
+}
+/*type-hous*/
+.type-hous {
+  background: url(../img/background-hotels.jpg);
+  width: 1200px;
+  height: 217px;
+  left: 40px;
+  top: 56px;
 }
 /* social-button */
 
