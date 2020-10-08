@@ -162,6 +162,8 @@ img {
 .social-button {
   color: inherit;
   background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
 }
 /*footer-copyright*/
 .footer-copyright .button:hover,
