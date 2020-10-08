@@ -216,6 +216,14 @@ img {
   font-size: 14px;
   line-height: 21px;
 }
+.hotels-list-item span {
+  background-image: url(../img/star.svg); 
+  background-repeat: repeat-x;
+  width: 300px; 
+}
+/*.hotels-list-AmaraResortandSpa span {
+  можно ли так задать на каждый спан? А у меня не выходит
+}*/
 .reservation {
   background-color: var(--basic-gray-dark);
 }
