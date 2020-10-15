@@ -18,7 +18,6 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  /*Это я взял с лайва, но не особо понял*/
 }
 body {
   font-family: "PT Sans", Arial, sans-serif;
@@ -32,7 +31,7 @@ body {
 .page a {
   text-decoration: none;
 }
-.img {
+img {
   max-width: 100%;
   height: auto;
 }
@@ -41,16 +40,10 @@ body {
   margin: 0;
   padding: 0;
 }
-.main-header {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 .main-image {
   background: url(../img/background-photo.jpg);
@@ -60,7 +53,7 @@ body {
   top: 55px;
 }
 .site-navigation {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background-color: var(--basic-white);
   margin-left: 73px;
@@ -72,10 +65,8 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-}
-/*cause*/
-.cause {
   background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 .title {
   font-weight: 700;
@@ -99,14 +90,11 @@ body {
   background-color: var(--basic-blue);
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /*Чудным образом работает. Хотя наверное правильно задать раззые классы Для 1 и 2 второй причины? Или норм что они объеденены.
-  Теперь я понимаю, почему ты говорил что надо все обернуть в див*/
 }
 .cause-item-realtown-brightdevil h3 {
   font-size: 21px;
   line-height: 21px;
 }
-
 .cause-item-realtown-brightdevil span,
 .cause-item-realtown-brightdevil p {
   font-size: 14px;
@@ -140,9 +128,6 @@ body {
   /* Тоже самое */
 }
 /* search */
-.search {
-  background-color: var(--basic-white);
-}
 .search h2 {
   font-weight: 700;
   font-size: 30px;
@@ -176,7 +161,6 @@ body {
 /*page-footer*/
 .page-footer {
   color: var(--basic-black);
-  background-color: var(--basic-white);
   background-repeat: repeat;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
