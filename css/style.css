@@ -64,9 +64,11 @@ img {
 .center {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
   background-color: var(--basic-white);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 .title {
   font-weight: 700;
@@ -81,24 +83,19 @@ img {
   text-align: center;
   color: var(--basic-black-gray);
 }
-.cause {
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-}
 .cause-list {
-  display: grid;
-  column-gap: 0px;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 256px 256px 256px 256px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 .cause-item-realtown {
+  width: 100%;
   display: grid;
   grid-template-columns: 400px 800px;
 }
 .cause-item-brightdevil {
+  width: 100%;
   display: grid;
   grid-template-columns: 800px 400px;
 }
@@ -121,9 +118,7 @@ img {
   line-height: 21px;
 }
 .cause-item-benefits {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-row: 2;
+  width: 33.333%;
 }
 .cause-item h3,
 .cause-item-benefits h4 {
@@ -139,9 +134,8 @@ img {
   color: var(--basic-black-gray);
 }
 .cause-item {
-  background-color: var(--basic-gray); 
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 33.333%;
+  background-color: var(--basic-gray);
 }
 /* search */
 .search h2 {
@@ -177,28 +171,16 @@ img {
 /*page-footer*/
 .page-footer {
   color: var(--basic-black);
-  background-repeat: repeat;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .footer-contacts {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px; 
 }
 .footer-phone {
   color: inherit;
-}
-.footer-social {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-.footer-copyright {
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 /*type-hous*/
 .type-hous {
