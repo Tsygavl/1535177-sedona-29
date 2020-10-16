@@ -81,31 +81,49 @@ img {
   text-align: center;
   color: var(--basic-black-gray);
 }
-.cause-list {
+.cause {
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
 }
-.cause-item-realtown-brightdevil {
+.cause-list {
+  display: grid;
+  column-gap: 0px;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 256px 256px 256px;
+  margin: 0;
+  padding: 0;
+}
+.cause-item-realtown {
+  display: grid;
+  grid-template-columns: 400px 800px;
+}
+.cause-item-brightdevil {
+  display: grid;
+  grid-template-columns: 800px 400px;
+}
+.cause-item-realtown,
+.cause-item-brightdevil {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
 }
-.cause-item-realtown-brightdevil h3 {
+
+.cause-item-realtown h3,
+.cause-item-brightdevil h3 {
   font-size: 21px;
   line-height: 21px;
 }
-.cause-item-realtown-brightdevil span,
-.cause-item-realtown-brightdevil p {
+.cause-item-realtown span,
+.cause-item-brightdevil span,
+.cause-item-realtown p,
+.cause-item-brightdevil p {
   font-size: 14px;
   line-height: 21px;
 }
 .cause-item-benefits {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-   outline: 5px solid rgba(255, 0, 0 , 0.3);
-   /*Зараза...каждый блок на всю ширину. Rows даже не катит вообще. В чем беда? */
+  grid-template-columns: 400px 400px 400px;
+  grid-row: 2;
 }
 .cause-item h3,
 .cause-item-benefits h4 {
@@ -121,11 +139,9 @@ img {
   color: var(--basic-black-gray);
 }
 .cause-item {
-  background-color: var(--basic-gray);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--basic-gray); 
   outline: 5px solid rgba(255, 0, 0 , 0.3);
-  /* Тоже самое */
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /* search */
 .search h2 {
