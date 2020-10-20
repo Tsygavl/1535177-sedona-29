@@ -202,12 +202,14 @@ img {
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
   color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 /*.searching-results*/
 .searching-results {
-  background-color: var(--basic-white);
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 .searching-results strong {
   font-weight: : 700;
   font-size: 21px;
@@ -226,9 +228,7 @@ img {
   color: var(--basic-black);
   opacity: 0.3;
 }
-.hotels-list {
-  background-color: var(--basic-white);
-}
+
 .hotels-list-item-hotelname {
   font-size: 21px;
   line-height: 26px;
@@ -249,14 +249,15 @@ img {
   font-size: 14px;
   line-height: 21px;
 }
+.hotels-list-item {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 .hotels-list-item span {
   background-image: url(../img/star.svg); 
   background-repeat: repeat-x;
   width: 300px; 
 }
-/*.hotels-list-AmaraResortandSpa span {
-  можно ли так задать на каждый спан? А у меня не выходит
-}*/
 .reservation {
   background-color: var(--basic-gray-dark);
 }
@@ -266,4 +267,24 @@ img {
 .hotels-list-item-rating {
   background-color: var(--basic-white-smoke);
   color: var(--basik-dim-gray);
+}
+.breadcrumbs {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+.hotels-list-AmaraResortandSpa {
+  display: grid;
+  grid-row: 1 -1;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.hotels-list-DesertQuailInn {
+  display: grid;
+  grid-row: 1 -1;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.hotels-list-VillasatPocoDiablo {
+  display: grid;
+  grid-row: 1 -1;
+  grid-template-columns: 1fr 1fr 1fr;
 }
