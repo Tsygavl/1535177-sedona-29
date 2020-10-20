@@ -239,7 +239,7 @@ img {
   line-height: 21px;
   color: var(--basic-black-gray);
 }
-.hotels-list-item-link {
+.hotels-btn {
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -249,22 +249,22 @@ img {
   font-size: 14px;
   line-height: 21px;
 }
-.hotels-list-item {
+.hotels-list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.hotels-list-item span {
+.hotels-list span {
   background-image: url(../img/star.svg); 
   background-repeat: repeat-x;
   width: 300px; 
 }
 .reservation {
   background-color: var(--basic-gray-dark);
-}
+} 
 .details {
   background-color: var(--basic-blue);
 }
-.hotels-list-item-rating {
+.hotels-list-rating {
   background-color: var(--basic-white-smoke);
   color: var(--basik-dim-gray);
 }
@@ -272,19 +272,7 @@ img {
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 }
-.hotels-list-AmaraResortandSpa {
+.hotels-name {
   display: grid;
   grid-row: 1 -1;
   grid-template-columns: 1fr 1fr 1fr;
-
-}
-.hotels-list-DesertQuailInn {
-  display: grid;
-  grid-row: 1 -1;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.hotels-list-VillasatPocoDiablo {
-  display: grid;
-  grid-row: 1 -1;
-  grid-template-columns: 1fr 1fr 1fr;
-}
