@@ -229,7 +229,7 @@ img {
   opacity: 0.3;
 }
 
-.hotels-list-item-hotelname {
+.hotels-title {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
@@ -264,7 +264,7 @@ img {
 .details {
   background-color: var(--basic-blue);
 }
-.hotels-list-rating {
+.hotels-rating {
   background-color: var(--basic-white-smoke);
   color: var(--basik-dim-gray);
 }
