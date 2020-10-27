@@ -49,14 +49,12 @@ img {
   background: url(../img/background-photo.jpg);
   width: 1200px;
   height: 509px;
-  left: 40px;
-  top: 55px;
 }
 .site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: var(--basic-white);
+  display: flex;
+  justify-content: space-between;
   margin-left: 73px;
+  margin-right: 76px;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -202,6 +200,11 @@ img {
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
   color: var(--basic-black);
+}
+.footer-social {
+  display: flex;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  margin: auto;
 }
 /*.searching-results*/
 .searching-results {
