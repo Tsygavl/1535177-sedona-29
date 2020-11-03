@@ -168,6 +168,7 @@ img {
   line-height: 21px;
   color: var(--basic-black);
 }
+.cause-item-benefits p,
 .cause-item span,
 .cause-item p {
   font-size: 14px;
