@@ -44,8 +44,10 @@ img {
   margin: 0;
   padding: 0;
 }
-.main-navigation {
+.main-header {
   position: relative;
+}
+.main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -78,11 +80,11 @@ img {
 .site-navigation a {
   color: var(--basic-black);
 }
-.main-header-logo {
+.main-header-logo  {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%);
 }
 .center {
   width: 1200px;
@@ -252,16 +254,8 @@ img {
 }
 .footer-phone {
   color: inherit;
+}
 
-}
-/*type-hous*/
-.type-hous {
-  background: url(../img/background-hotels.jpg);
-  width: 1200px;
-  height: 217px;
-  left: 40px;
-  top: 56px;
-}
 /* social-button */
 
 .social-button {
@@ -287,9 +281,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-top: 36px;
+  justify-content: center;
 }
-.footer-social li {
-
+.footer-social-list li {
+  margin-right: 8px;
+}
+.footer-social-list li:nth-child(3n) {
+  margin-right: 0;
 }
 /*footer-copyright*/
 .footer-copyright {
@@ -307,12 +305,17 @@ img {
   color: var(--basic-blue-light);
 }
 
-
-
 .button-copyright:active img { 
   background-color:rgba(189,187,188,1;);
-
-
+}
+/*type-hous*/
+.type-hous {
+  background: url(../img/background-hotels.jpg);
+  width: 1200px;
+  height: 217px;
+  left: 40px;
+  top: 56px;
+  }
 /*.searching-results*/
 .searching-results {
   display: flex;
