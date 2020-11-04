@@ -50,6 +50,14 @@ img {
   line-height: 26px;
   color: var(--basic-black);
 }
+.nav-information,
+.nav-fotoandvideo {
+  text-align: left;
+}
+.nav-mapsusa,
+.nav-hotel {
+  text-align: right;
+}
 .main-image {
   background: url(../img/background-photo.jpg);
   width: 1200px;
@@ -62,9 +70,10 @@ img {
 }
 .site-navigation {
   display: flex;
-  justify-content: space-around;
-  margin-left: 73px;
-  margin-right: 76px;
+  padding:15px 72px;
+}
+.site-navigation li {
+  width: 25%;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -99,7 +108,7 @@ img {
   line-height: 26px;
   text-align: center;
   color: var(--basic-black-gray);
-  margin-top: 16,5px;
+  margin-top: 54px;
   margin-bottom: 51px;
 }
 .cause-list {
@@ -113,7 +122,7 @@ img {
   display: grid;
   grid-template-columns: 400px 800px;
 }
-.cause-item-realtown div {
+.cause-item-realtown-info {
   padding-top: 47px;
 }
 .cause-item-brightdevil {
@@ -121,7 +130,7 @@ img {
   display: grid;
   grid-template-columns: 800px 400px;
 }
-.cause-item-brightdevil div {
+.cause-item-brightdevil-info {
   padding-top: 50px;
 }
 .cause-item-realtown,
@@ -210,8 +219,8 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-white);
-  width:568px;
-  height:86px;
+  width: 568px;
+  height: 86px;
 
 }
 .button-search:hover {
@@ -219,8 +228,7 @@ img {
 }
 .button-search:active {
   background-color: var(--basic-gray-active);
-  color: rgba(0, 0, 0, 0.5);
-  /*Как задать прозрачность тексту при активации*/
+  color: rgba(255,255,255,0.3);
 }
 
 /*page-footer*/
@@ -266,33 +274,45 @@ img {
   justify-content: center;
 
 }
-/*Не получается поставить их рядышком*/
 .social-button:hover {
  background-color: var(--basic-blue-medium);
 }
 .social-button:active {
   background-color: var(--basic-blue-dark);
-  /*opacity: 0.3;*/
-  /*Так же не работает прозрачность*/
 }
-
-
-/*footer-copyright*/
-.footer-copyright {
-  color: var(--basic-black);
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+.social-button:active img { 
+  opacity: 0.3; 
 }
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 36px;
-  padding-left: 163px;
-  padding-right: 90px;
+}
+.footer-social li {
+
+}
+/*footer-copyright*/
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
 }
+.footer-copyright p {
+  padding-right: 8px;
+}
+.button-copyright:hover {
+  background-color: var(--basic-white);
+ }
+.button-copyright:hover img{
+  color: var(--basic-blue-light);
+}
+
+
+
+.button-copyright:active img { 
+  background-color:rgba(189,187,188,1;);
+
+
 /*.searching-results*/
 .searching-results {
   display: flex;
@@ -342,7 +362,7 @@ img {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-   outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 
 }
 .hotels-list span {
