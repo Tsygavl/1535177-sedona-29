@@ -316,10 +316,12 @@ img {
   left: 40px;
   top: 56px;
   }
-/*.searching-results*/
+
+  /*.searching-results*/
 .searching-results {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  height: 86px;
 }
 
 .searching-results h1{
@@ -327,26 +329,22 @@ img {
   font-size: 21px;
   line-height: 26px;
   margin-right: 46px;
-  padding-top: 29px;
   padding-left: 73px;
-  padding-bottom: 31px;
 }
 .searching-results h2{
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   margin-right: 40px;
-  padding-top: 31px;
-  padding-bottom: 37px
 }
 .breadcrumbs {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   display: flex;
-  padding-top: 32px;
   width: 238px;
   justify-content: space-between;
+  margin-right: 503px;
 }
 .searching-results-cost {
   color: var(--basic-blue-light);
@@ -356,28 +354,60 @@ img {
   color: var(--basic-black);
   opacity: 0.3;
 }
-.up-down a {
-  margin-right: 12px;
+.up-down {
+}
+.hotels-name {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 150px;
+  outline: 1px solid #E5E5E5;
+}
+.hotels-img {
+  padding-top: 30px;
+  padding-left: 73px;
+  margin-right: 29px;
+}
+.hotels-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 258px;
+  margin-top: 24px;
+  margin-bottom: 30px;
 }
 .hotels-title {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
 }
+
 .hotels-list p {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black-gray);
+  width: 129px;
+  /* Как мне прижать к левому краю.Опять как всегда ночь.... И появляются глупые вопросы*/
 }
-.hotels-btn {
+.hotels-btn-details {
   text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
   text-transform: uppercase;
-  border: none;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  background-color: var(--basic-blue-light);
+  width: 110px;
+  margin-right: 6px;
+}
+.hotels-btn-reservation {
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-gray-dark);
+  width: 142px;
 }
 .hotels-list {
   display: flex;
@@ -389,20 +419,20 @@ img {
   background-image: url(../img/star.svg); 
   background-repeat: repeat-x;
   width: 300px; 
+  margin-right: 6px;
+  /*Не получается сделать зведочки. Как убрать текст со звездочек, что бы работало.
+  И в каждом отеле разное количество звезд. Каждому спану задать класс? В общем не догоняю.
+  И как лучше сместить элементы к правому краю? margin-left?*/
 }
-.reservation {
-  background-color: var(--basic-gray-dark);
-} 
-.details {
-  background-color: var(--basic-blue-light);
-}
-.hotels-rating {
+.hotels-ratingg {
   background-color: var(--basic-white-smoke);
   color: var(--basik-dim-gray);
+  position: absolute;
+  width: 110px;
+  height: 27px;
+  left: 1057px;
+  top: 453px;
 }
-.hotels-name {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
+/*1)Еще подчеркнуты все ссылки на странице отеля. Не могу увидеть причину
+2)Как-то съехало расположение в хедеры элементов.В макете чуть подругому.*/
 
