@@ -322,15 +322,31 @@ img {
   flex-wrap: wrap;
 }
 
-.searching-results strong {
+.searching-results h1{
   font-weight: : 700;
   font-size: 21px;
   line-height: 26px;
+  margin-right: 46px;
+  padding-top: 29px;
+  padding-left: 73px;
+  padding-bottom: 31px;
 }
-.searching-results h2,
-.searching-results a {
+.searching-results h2{
   font-size: 12px;
   line-height: 18px;
+  font-weight: 400;
+  margin-right: 40px;
+  padding-top: 31px;
+  padding-bottom: 37px
+}
+.breadcrumbs {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  display: flex;
+  padding-top: 32px;
+  width: 238px;
+  justify-content: space-between;
 }
 .searching-results-cost {
   color: var(--basic-blue-light);
@@ -340,7 +356,9 @@ img {
   color: var(--basic-black);
   opacity: 0.3;
 }
-
+.up-down a {
+  margin-right: 12px;
+}
 .hotels-title {
   font-size: 21px;
   line-height: 26px;
@@ -365,7 +383,6 @@ img {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 
 }
 .hotels-list span {
@@ -383,14 +400,9 @@ img {
   background-color: var(--basic-white-smoke);
   color: var(--basik-dim-gray);
 }
-.breadcrumbs {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
 .hotels-name {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
 }
 
