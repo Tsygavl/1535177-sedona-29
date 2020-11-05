@@ -10,7 +10,7 @@
   --basic-gray-hover: #604E43;
   --basic-gray-active: #503E33;
   --basic-white-smoke: #F2F2F2;
-  --basik-dim-gray: #666666;
+  --basic-dim-gray: #666666;
   --basic-black-gray: #333333;
 }
 .page {
@@ -374,6 +374,7 @@ img {
   width: 258px;
   margin-top: 24px;
   margin-bottom: 30px;
+  margin-right: auto;
 }
 .hotels-title {
   font-size: 21px;
@@ -386,6 +387,7 @@ img {
   line-height: 21px;
   color: var(--basic-black-gray);
   width: 129px;
+  text-align: left;
   /* Как мне прижать к левому краю.Опять как всегда ночь.... И появляются глупые вопросы*/
 }
 .hotels-btn-details {
@@ -424,15 +426,21 @@ img {
   И в каждом отеле разное количество звезд. Каждому спану задать класс? В общем не догоняю.
   И как лучше сместить элементы к правому краю? margin-left?*/
 }
-.hotels-ratingg {
-  background-color: var(--basic-white-smoke);
-  color: var(--basik-dim-gray);
-  position: absolute;
-  width: 110px;
-  height: 27px;
-  left: 1057px;
-  top: 453px;
+.hotels-rating {
+  margin-top: 29px;
+  margin-right: 72px;
 }
+.raiting {
+  text-align: center;
+  color: var(--basic-dim-gray);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-white-smoke);
+  width: 110px;
+  margin-top: 47px; 
+  }
 /*1)Еще подчеркнуты все ссылки на странице отеля. Не могу увидеть причину
-2)Как-то съехало расположение в хедеры элементов.В макете чуть подругому.*/
+2)Как-то съехало расположение в хедеры элементов.В макете чуть подругому.
 
