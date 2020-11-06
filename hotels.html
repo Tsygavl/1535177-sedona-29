@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body-hotels">
+  <body class="page-body">
     <div class="center">
       <header class="main-header">
         <nav class="main-navigation">
@@ -24,7 +24,73 @@
         </nav>
       </header>
       <main>
-        <section class="type-hous">
+        <section class="filter">
+          <div class="filter-infrastructure">
+            <fieldset class="filter-item">
+              <legend>инфраструктура:</legend>
+              <ul class="clear-list">
+                <li class="filter-option filter-checkbox ">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="swimminpool" id="filter-swimminpool" checked>
+                  <label for="filter-swimminpool">бассейн</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">парковка</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">wi-fi</label>
+                </li>
+              </ul>
+             </fieldset>
+          </div>
+          <div class="filter-type-house">
+            <fieldset class="filter-item">
+              <legend>тип жилья:</legend>
+              <ul class="clear-list">
+                <li class="filter-option filter-checkbox ">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">гостиница</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">мотель</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartament" id="filter-apartament" checked>
+                  <label for="filter-apartament">апартаменты</label>
+                </li>
+              </ul>
+             </fieldset>
+          </div>
+          <div class="cost-column">
+            <fieldset class="filter-item">
+                <legend>Стоимость в сутки(р):</legend>
+                <div class="range-filter">
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="3000">
+                    </label>
+                  </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="cost-column-show">
+                    <a class="show" href="#">
+                      Показать
+                      <!-- Завтра доделаю... -->
+                    </a>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
         </section>
         <section class="searching-results">
           <h1>Найдено: 3</h1>
