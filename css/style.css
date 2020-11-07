@@ -318,7 +318,6 @@ img {
 }
 
 .button-copyright:active img { 
-  background-color:rgba(189,187,188,1;);
 }
 
 .filter {
@@ -330,6 +329,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  position: relative;
 }
 .filter legend {
   font-weight: 700;
@@ -354,39 +354,40 @@ img {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/square.svg);
+  background-image: url(../img/checkbox-off.svg);
   width: 23px;
   height: 23px;
   left: 0%;
- 
   top: 0%;
-  display: block;
 }
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
+  display: none;
+}
+.filter-input-checkbox + label::after {
   content: "";
   position: absolute;
-  left: 2%;
-  right: 0%;
-  top: 5.81%;
-  bottom: 0%;
-  background-image: url(../img/shape.svg);
-  width: 21.72px;
-  height: 16.76px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  left: 0%;
+  top: 0%;
+  background-image: url(../img/checkbox-on.svg);
+  width: 26.17px;
+  height: 23px;
+  display: none;
+}
+.filter-input-checkbox:checked + label::after {
+  display: block;
 }
 .filter-item {
   margin: 0;
   padding: 0;
   border: none;
 }
-.range-filter {
-  width: 224px;
-  margin-top: 11px;
+.filter-infrastructure-item li ,
+.filter-type-house-item li {
+ margin-top: 24px;
 }
 .range-controls {
   position: relative;
-  height: 80px;
+  height: 19px;
   padding-top: 30px;
   width: 210px;
 }
@@ -400,27 +401,22 @@ img {
 }
 .range-controls .scale {
   height: 2px;
-  background: var(--basic-white);
-  opacity: 0.3;
+  background-color: rgba(255,255,255,0.3);
 }
 .range-controls .bar {
   width: 158px;
   height: 2px;
-  background: var(--basic-black);
-  /*Не получается сделать белую шкалу. Вся она белая с opacity 0.3, а выделеный участок должен быть белым*/
+  background-color: rgba(255,255,255,1);
 }
 .range-controls .toggle {
-  width: 4px;
-  height: 4px;
+  background-image: url(../img/filter-button.svg);
+  width: 19px;
+  height: 21px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  border-radius: 50%;
   position: absolute;
   left: 0;
   top: 21px;
   cursor: pointer;
-  /* Элементы имеют еще что то типо тени серой внизу. Может задавать круглешки картинкой? а не бордер? */
 }
 .range-controls .toggle-min {
   left: 0;
@@ -431,6 +427,17 @@ img {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  background-color: var(--basic-white);
+  width: 2px;
+  height: 22px;
+  left: 50%;
+  top: 50%; 
+  transform: translate(-50%, -50%);
 }
 .price-controls label {
   text-transform: uppercase;
@@ -445,7 +452,23 @@ img {
   background: #f1f1f1;
   font-family: inherit;
   font-size: inherit;
-  /*Как убрать вообще фон? что бы цифры были на общем фоне.И как стилизовать границу между от и до (не доделаная палочка)*/
+  background-color: transparent;
+}
+.cost-column {
+  display: flex;
+  width: 224px;
+  margin-left: 363px;
+}
+.cost-column-show {
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  width: 137px;
+  height: 36px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-top: 20px;
 }
 .searching-results {
   display: flex;
