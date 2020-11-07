@@ -329,19 +329,21 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  position: relative;
 }
 .filter legend {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   padding-top: 16px;
+  text-align: left;
 }
 .filter-option label {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
+  text-align: left;
+  padding-left: 35px;
 }
 .filter-infrastructure {
   margin-left: 72px;
@@ -399,6 +401,13 @@ img {
   width: 224px;
   height: 36px;
 }
+.min-price {
+  padding-left: 42px;
+  padding-top: 4px;
+}
+.max-price {
+  padding-top: 4px;
+}
 .range-controls .scale {
   height: 2px;
   background-color: rgba(255,255,255,0.3);
@@ -412,6 +421,16 @@ img {
   background-image: url(../img/filter-button.svg);
   width: 19px;
   height: 21px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 21px;
+  cursor: pointer;
+}
+.range-controls .toggle:hover {
+  background-image: url(../img/filter-button-hover.svg);
+  width: 23px;
+  height: 24px;
   padding: 0;
   position: absolute;
   left: 0;
@@ -446,7 +465,6 @@ img {
 }
 .price-controls input {
   width: 60px;
-  text-align: center;
   color: var(--basic-white);
   border: none;
   background: #f1f1f1;
@@ -459,7 +477,8 @@ img {
   width: 224px;
   margin-left: 363px;
 }
-.cost-column-show {
+.btn-show {
+  display: block;
   text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;
@@ -468,7 +487,13 @@ img {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
-  margin-top: 20px;
+  margin-left: 47px;
+  margin-top: 7px;
+  padding-top: 5px;
+}
+.btn-show:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 .searching-results {
   display: flex;
