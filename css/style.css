@@ -12,6 +12,10 @@
   --basic-white-smoke: #F2F2F2;
   --basic-dim-gray: #666666;
   --basic-black-gray: #333333;
+  --basic-btn-special: #BDBBBC;
+  --basic-btn-up: #CACACA;
+  --basic-white-opacity: rgba(255,255,255,0.3);
+
 }
 .page {
   height: 100%;
@@ -242,7 +246,7 @@ img {
 }
 .button-search:active {
   background-color: var(--basic-gray-active);
-  color: rgba(255,255,255,0.3);
+  color: var(--basic-white-opacity);
 }
 
 /*page-footer*/
@@ -310,8 +314,11 @@ img {
 .footer-copyright p {
   padding-right: 8px;
 }
-.button-copyright:hover{
-  background-color: rgba(129, 179, 210, 1)
+.button-copyright:hover {
+  fill: var(--basic-blue-light);
+ }
+ .button-copyright:active {
+  fill: var(--basic-btn-special);
  }
 
 .filter {
@@ -377,7 +384,7 @@ img {
   padding: 0;
   border: none;
 }
-.filter-infrastructure-item li ,
+.filter-infrastructure-item li,
 .filter-type-house-item li {
  margin-top: 24px;
 }
@@ -385,31 +392,31 @@ img {
   position: relative;
   height: 19px;
   padding-top: 30px;
-  width: 210px;
 }
 .price-controls {
   margin-top: 11px;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
-  width: 224px;
   height: 36px;
+  width: 316px;
 }
 .min-price {
-  padding-left: 42px;
+  padding-left: 61px;
   padding-top: 4px;
 }
 .max-price {
   padding-top: 4px;
+  margin-right: 21px;
 }
 .range-controls .scale {
   height: 2px;
-  background-color: rgba(255,255,255,0.3);
+  background-color: var(--basic-white-opacity);
 }
 .range-controls .bar {
-  width: 158px;
+  width: 248px;
   height: 2px;
-  background-color: rgba(255,255,255,1);
+  background-color: var(--basic-white);
 }
 .range-controls .toggle {
   background-image: url(../img/filter-button.svg);
@@ -425,17 +432,14 @@ img {
   background-image: url(../img/filter-button-hover.svg);
   width: 23px;
   height: 24px;
-  padding: 0;
+
   position: absolute;
-  left: 0;
-  top: 21px;
-  cursor: pointer;
 }
 .range-controls .toggle-min {
   left: 0;
 }
 .range-controls .toggle-max {
-  left: 158px;
+  left: 233px;
 }
 .price-controls {
   display: flex;
@@ -469,7 +473,7 @@ img {
 .cost-column {
   display: flex;
   width: 224px;
-  margin-left: 363px;
+  margin-left: 325px;
 }
 .btn-show {
   display: block;
@@ -481,7 +485,7 @@ img {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
-  margin-left: 47px;
+  margin-left: 93px;
   margin-top: 7px;
   padding-top: 5px;
 }
@@ -522,16 +526,18 @@ img {
 }
 .searching-results-type,
 .searching-results-raiting {
-  color: rgba(0,0,0,0.3);
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed #81B3D2;
 }
 .searching-results-raiting:hover {
   color: var(--basic-blue-light);
 }
 .searching-results-raiting:active {
-  color: rgba(0,0,0,1);
+  color: var(--basic-black);
 }
 .up-btn {
-  fill: rgba(202,202,202,1);
+  fill: var(--basic-btn-up);
 }
 .down-btn {
   fill: var(--basic-blue-light);
@@ -573,16 +579,18 @@ img {
   color: var(--basic-blue-light);
 }
 .hotels-title:active {
-  color: rgba(0,0,0,0.3);
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .hotels-list p {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black-gray);
-  width: 129px;
+  width: 110px;
   text-align: left;
-  /* Как мне прижать к левому краю.Опять как всегда ночь.... И появляются глупые вопросы*/
+  margin-right: 6px;
+  font-weight: 400;
 }
 .hotels-btn-details {
   text-align: center;
