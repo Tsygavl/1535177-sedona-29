@@ -429,11 +429,7 @@ img {
   cursor: pointer;
 }
 .range-controls .toggle:hover {
-  background-image: url(../img/filter-button-hover.svg);
-  width: 23px;
-  height: 24px;
-
-  position: absolute;
+  transform: scale(1.3);
 }
 .range-controls .toggle-min {
   left: 0;
@@ -528,7 +524,7 @@ img {
 .searching-results-raiting {
   color: var(--basic-black);
   opacity: 0.3;
-  border-bottom: 1px dashed #81B3D2;
+  border-bottom: 1px dotted #81B3D2;
 }
 .searching-results-raiting:hover {
   color: var(--basic-blue-light);
