@@ -12,10 +12,10 @@
       <header class="main-header">
         <nav class="main-navigation">
           <ul class="site-navigation clear-list">
-            <li class="nav-information"><a>Информация</a></li>
-            <li class="nav-fotoandvideo"><a href="#">Фото и видео</a></li>
-            <li class="nav-mapsusa"><a href="#">Карта Штата</a></li>
-            <li class="nav-hotel"><a href="hotels.html">Гостиницы</a></li>
+            <li class="nav-information"><a>информация</a></li>
+            <li class="nav-fotoandvideo"><a href="#">фото и видео</a></li>
+            <li class="nav-mapsusa"><a href="#">карта штата</a></li>
+            <li class="nav-hotel"><a href="hotels.html">гостиницы</a></li>
           </ul>
         </nav>
         <a class="main-header-logo" href="#">
@@ -28,14 +28,14 @@
           <img class="welcome-image-bot" src="img/welcome-bot.svg" width="1200" height="272"> 
         </section>
         <section class="main-title">
-          <h1 class="title">седона - небольшой городок в аризоне,<br>заслуживавший большего!</h1>
+          <h1 class="title">седона—небольшой городок в аризоне,<br>заслуживавший большего!</h1>
             <h2 class="subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
         </section>
         <ul class="cause-list clear-list">
           <li class="cause-item-realtown">
             <div class="cause-item-realtown-info">
-              <h3>Настоящий городок</h3>
-              <span>-№1-</span>
+              <h3>Настоящий<br> городок</h3>
+              <span>— №1 —</span>
               <p>Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
             </div>
             <img src="img/realtown.jpg" width="800" height="256" alt="Фото городка">
@@ -43,8 +43,8 @@
           <li class="cause-item-benefits">
             <div class="house">
               <img src="img/house.svg" width="72" height="72" alt="Дом">
-              <h4>Жилье</h4>
-              <p>Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
+              <h4>Жильё</h4>
+              <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
             </div>
           </li>
           <li class="cause-item-benefits">
@@ -65,28 +65,28 @@
             <img src="img/brightdevil.jpg" width="800" height="256" alt="Мост дьявола">
             <div class="cause-item-brightdevil-info">
               <h3>Там есть<br> мост дьявола</h3>
-              <span>-№2-</span>
+              <span>— №2 —</span>
               <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
             </div>
           </li>
           <li class="cause-item">
             <div>
-              <h3>небольшая площадь</h3>
-              <span>-№3-</span>
+              <h3>небольшая<br> площадь</h3>
+              <span>— №3 —</span>
               <p>все достопримечательности<br> находятся очень близко</p>
             </div>
           </li>
           <li class="cause-item">
             <div>
-              <h3>Красивая дорога</h3>
-              <span>-№4-</span>
+              <h3>Красивая <br>дорога</h3>
+              <span>— №4 —</span>
               <p>ехать в седону из лас-вегаса совсем<br> не скучно!</p>
             </div>
           </li>
           <li class="cause-item">
             <div>
-              <h3>мало туристов</h3>
-              <span>-№5-</span>
+              <h3>мало<br> туристов</h3>
+              <span>— №5 —</span>
               <p>большинство едет в гранд каньон<br> и толпится там</p>
             </div>
           </li>
@@ -95,28 +95,39 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложение гостиниц в седоне</p>
           <button class="button-search" type="button">Поиск гостиниц в Седоне</button>
-          <!-- <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="form-item">
-              <label for="arrival date">дата заезда</label>
-              <input id="arrival date" type="text" name="date" placeholder="24.04.2017">
-              <a class="button-calendar"  href="#">
-                <img src="img/calendar.svg" width="21" height="23">
-              </a>
-            </p>
-            <p class="form-item">
-              <label for="date of departure">дата выезда</label>
-              <input id="date of departure" type="text" name="date" placeholder="04.07.2017">
-            </p>
-            <p class="form-item">
-              <label for="adult">взрослые</label>
-              <input id="adult" type="text" name="name" placeholder="Борода">
-            </p>
-            <p class="appointment-item">
-              <label for="adult">Телефон</label>
-              <input id="appointment-phone" type="tel" name="phone" placeholder="+7 000 000-00-00">
-            </p>
-        <button class="button" type="submit">Отправить</button>
-          </form> -->
+          <form class="search-form" method="post">
+            <div class="form-item search-date">
+              <label for="arrival date">дата заезда:</label>
+              <input id="arrival date" type="text" name="check-in" placeholder="24 апреля 2017">
+              <button class="calendar-arr" type="button">
+                <img src="img/calendar.svg"  width="21" height="23" alt="calendar">             
+              </button>
+            </div>
+            <div class="form-item search-date">
+              <label for="date of departure">дата выезда:</label>
+              <input id="date of departure" type="text" name="check-out" placeholder="4 июля 2017">
+              <button class="calendar-ded" type="button">
+                <img src="img/calendar.svg"  width="21" height="23" alt="calendar">             
+              </button>
+            </div>
+            <div class="form-item search-date">
+              <label for="adult">взрослые:</label>
+              <div>
+                <button aria-label="minus" class="minus" type="button"></button>
+                <input id="adult" type="text" name="adults" placeholder="2">
+                <button aria-label="plus" class="plus" type="button"></button>
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="child">дети:</label>
+              <div>
+                <button aria-label="minus" class="minus" type="button"></button>
+                <input id="child" type="text" name="-name+" placeholder="0">
+                <button aria-label="plus" class="plus" type="button"></button>
+              </div>
+            </div>
+          <button class="search-btn-modal" type="submit">найти</button>
+          </form>
           <img src="img/map.png" width="1199" height="594" alt="Расположение Седоны на карте ">
         </section>
         </main>
