@@ -769,6 +769,14 @@ img {
   outline: none;
   background-color: var(--basic-white-smoke);
   text-align: center;
+  position: relative;
+}
+.plus svg,
+.minus svg {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
 }
 .plus,
 .minus {
@@ -779,7 +787,7 @@ img {
   fill: var(--basic-black);
 }
 .minus:active,
-.plus {
+.plus:active {
   fill: var(--basic-blue-light);
 }
 .search-btn-modal {
