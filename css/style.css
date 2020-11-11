@@ -748,11 +748,11 @@ img {
   top: 112px;
   right: 54px;
 }
-.form-item input(type="text")::placeholder {
+.form-item input[type="text"]::placeholder {
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
-  font: inherit;
+  color: var(--basic-black);
 }
 .search-wrapper {
   display: flex;
@@ -793,12 +793,13 @@ img {
 .search-btn-modal {
   background-color: var(--basic-blue-light);
   font-size: 21px;
-  line-height: 27px;
+  line-height: 22px;
   font-weight: 700;
   color: var(--basic-white);
   width: 458px;
   height: 58px;
   border: none;
+  padding: 16px 81px;
 }
 .search-btn-modal:hover {
   background-color: var(--basic-blue-medium);
